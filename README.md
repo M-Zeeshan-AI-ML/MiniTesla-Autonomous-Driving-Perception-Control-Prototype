@@ -86,20 +86,4 @@ The annotated video shows:
 - steering/control status
 - safety braking state
 
-## GitHub
 
-Do not commit:
-- `.venv/`
-- `runs/`
-- downloaded `.pt` model files
-- large private datasets
-
-## Portfolio wording
-
-Only claim features you actually ran and verified. A truthful project title is:
-
-**MiniTesla — CARLA-Free Autonomous Driving Perception & Control Prototype**
-
-Suggested technologies:
-
-**Python, PyTorch, Ultralytics YOLO, OpenCV, NumPy, Pandas, PyYAML, Git**
