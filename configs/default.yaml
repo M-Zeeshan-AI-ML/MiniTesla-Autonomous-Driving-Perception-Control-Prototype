@@ -1,0 +1,38 @@
+input:
+  resize_width: 960
+  output_fps: 20
+
+lane:
+  canny_low: 50
+  canny_high: 150
+  roi_top: 0.58
+  roi_bottom: 0.98
+  min_line_length: 30
+  max_line_gap: 40
+
+controller:
+  kp: 0.015
+  ki: 0.0005
+  kd: 0.008
+  max_steering: 1.0
+
+safety:
+  enabled: true
+  classes:
+    - person
+    - bicycle
+    - motorcycle
+    - car
+    - bus
+    - truck
+  center_margin: 0.28
+  min_box_area_ratio: 0.035
+
+perception:
+  enabled: true
+  model: yolo11n.pt
+  confidence: 0.35
+
+run:
+  save_video: true
+  display: true
